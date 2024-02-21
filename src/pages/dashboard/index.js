@@ -3,7 +3,7 @@ import { useState } from 'react';
 // material-ui
 import {
   Avatar,
-  AvatarGroup,
+  // AvatarGroup,
   Box,
   Button,
   Grid,
@@ -29,10 +29,10 @@ import AnalyticEcommerce from 'components/cards/statistics/AnalyticEcommerce';
 
 // assets
 import { GiftOutlined, MessageOutlined, SettingOutlined } from '@ant-design/icons';
-import avatar1 from 'assets/images/users/avatar-1.png';
-import avatar2 from 'assets/images/users/avatar-2.png';
-import avatar3 from 'assets/images/users/avatar-3.png';
-import avatar4 from 'assets/images/users/avatar-4.png';
+// import avatar1 from 'assets/images/users/avatar-1.png';
+// import avatar2 from 'assets/images/users/avatar-2.png';
+// import avatar3 from 'assets/images/users/avatar-3.png';
+// import avatar4 from 'assets/images/users/avatar-4.png';
 
 // avatar style
 const avatarSX = {
@@ -309,7 +309,7 @@ const DashboardDefault = () => {
             </ListItemButton>
           </List>
         </MainCard>
-        <MainCard sx={{ mt: 2 }}>
+        {/* <MainCard sx={{ mt: 2 }}>
           <Stack spacing={3}>
             <Grid container justifyContent="space-between" alignItems="center">
               <Grid item>
@@ -335,7 +335,7 @@ const DashboardDefault = () => {
               Need Help?
             </Button>
           </Stack>
-        </MainCard>
+        </MainCard> */}
       </Grid>
     </Grid>
   );
