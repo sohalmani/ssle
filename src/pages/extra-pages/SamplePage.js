@@ -1,19 +1,49 @@
 // material-ui
-import { Typography } from '@mui/material';
-
+// material-ui
+import {
+  // Button,
+  // Checkbox,
+  // Divider,
+  // FormControlLabel,
+  // FormHelperText,
+  Grid,
+  // Link,
+  // IconButton,
+  // InputAdornment,
+  InputLabel,
+  OutlinedInput,
+  Stack
+  // Typography
+} from '@mui/material';
 // project import
 import MainCard from 'components/MainCard';
 
 // ==============================|| SAMPLE PAGE ||============================== //
 
 const SamplePage = () => (
-  <MainCard title="Sample Card">
-    <Typography variant="body2">
-      Lorem ipsum dolor sit amen, consenter nipissing eli, sed do elusion tempos incident ut laborers et doolie magna alissa. Ut enif ad
-      minim venice, quin nostrum exercitation illampu laborings nisi ut liquid ex ea commons construal. Duos aube grue dolor in reprehended
-      in voltage veil esse colum doolie eu fujian bulla parian. Exceptive sin ocean cuspidate non president, sunk in culpa qui officiate
-      descent molls anim id est labours.
-    </Typography>
+  <MainCard title="Sample Page Inputs">
+    <form>
+      <Grid container spacing={3}>
+        <Grid item xs={12}>
+          <Stack spacing={1}>
+            <InputLabel htmlFor="email-login">Email Address</InputLabel>
+            <OutlinedInput id="email-login" type="email" value="" name="email" placeholder="Enter email address" fullWidth />
+          </Stack>
+        </Grid>
+        <Grid item xs={12}>
+          <Stack spacing={1}>
+            <InputLabel htmlFor="email-login">Email Address</InputLabel>
+            <OutlinedInput id="email-login" type="email" value="" name="email" placeholder="Enter email address" fullWidth />
+          </Stack>
+        </Grid>
+        <Grid item xs={12}>
+          <Stack spacing={1}>
+            <InputLabel htmlFor="email-login">Email Address</InputLabel>
+            <OutlinedInput id="email-login" type="email" value="" name="email" placeholder="Enter email address" fullWidth />
+          </Stack>
+        </Grid>
+      </Grid>
+    </form>
   </MainCard>
 );
 
