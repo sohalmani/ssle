@@ -10,6 +10,7 @@ const DashboardDefault = Loadable(lazy(() => import('pages/dashboard')));
 
 // render - sample page
 const SamplePage = Loadable(lazy(() => import('pages/extra-pages/SamplePage')));
+const SampleLandingPage = Loadable(lazy(() => import('pages/extra-pages/SampleLandingPage')));
 
 // render - utilities
 const Typography = Loadable(lazy(() => import('pages/components-overview/Typography')));
@@ -57,6 +58,10 @@ const MainRoutes = {
       element: <AntIcons />
     },
     {
+      path: 'rail/',
+      element: <SampleLandingPage />
+    },
+    {
       path: 'rail/crime',
       element: <SamplePage />
     },
@@ -69,6 +74,10 @@ const MainRoutes = {
       element: <SamplePage />
     },
     {
+      path: 'bus/',
+      element: <SampleLandingPage />
+    },
+    {
       path: 'bus/crime',
       element: <SamplePage />
     },
@@ -79,6 +88,10 @@ const MainRoutes = {
     {
       path: 'bus/call-for-service',
       element: <SamplePage />
+    },
+    {
+      path: 'system-wide/',
+      element: <SampleLandingPage />
     },
     {
       path: 'system-wide/crime',

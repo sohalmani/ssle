@@ -13,6 +13,7 @@ const bus = {
   id: 'bus',
   title: 'Bus',
   type: 'group',
+  url: '/bus',
   children: [
     {
       id: 'call-for-service',

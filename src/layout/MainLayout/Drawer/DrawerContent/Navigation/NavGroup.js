@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 // material-ui
 import { Box, List, Typography } from '@mui/material';
@@ -39,7 +40,15 @@ const NavGroup = ({ item }) => {
         drawerOpen && (
           <Box sx={{ pl: 3, mb: 1.5 }}>
             <Typography variant="subtitle2" color="textSecondary">
-              {item.title}
+              <Link
+                to={item.url}
+                style={{
+                  color: 'black',
+                  'text-decoration': 'none'
+                }}
+              >
+                {item.title}
+              </Link>
             </Typography>
             {/* only available in paid version */}
           </Box>

@@ -13,6 +13,7 @@ const rail = {
   id: 'rail',
   title: 'Rail',
   type: 'group',
+  url: '/rail',
   children: [
     {
       id: 'call-for-service',

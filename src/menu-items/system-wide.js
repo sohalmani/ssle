@@ -13,6 +13,7 @@ const systemWide = {
   id: 'system-wide',
   title: 'System Wide',
   type: 'group',
+  url: '/system-wide',
   children: [
     {
       id: 'call-for-service',
