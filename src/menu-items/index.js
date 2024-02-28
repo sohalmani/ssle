@@ -3,6 +3,7 @@
 import dashboard from './dashboard';
 // import utilities from './utilities';
 import support from './support';
+import rail from './rail';
 
 // ==============================|| MENU ITEMS ||============================== //
 
@@ -11,7 +12,8 @@ const menuItems = {
     dashboard,
     // pages,
     // utilities,
-    support
+    support,
+    rail
   ]
 };
 

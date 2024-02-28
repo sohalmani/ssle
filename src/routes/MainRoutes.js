@@ -54,6 +54,18 @@ const MainRoutes = {
     {
       path: 'icons/ant',
       element: <AntIcons />
+    },
+    {
+      path: 'rail/crime',
+      element: <SamplePage />
+    },
+    {
+      path: 'rail/arrest',
+      element: <SamplePage />
+    },
+    {
+      path: 'rail/call-for-service',
+      element: <SamplePage />
     }
   ]
 };

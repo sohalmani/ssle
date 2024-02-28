@@ -1,11 +1,7 @@
 // material-ui
-import {
-  Box,
-  // IconButton,
-  // Link,
-  useMediaQuery
-} from '@mui/material';
+import { Box, IconButton, Link, useMediaQuery } from '@mui/material';
 // import { GithubOutlined } from '@ant-design/icons';
+import { RedoOutlined } from '@ant-design/icons';
 
 // project import
 import Search from './Search';
@@ -34,6 +30,9 @@ const HeaderContent = () => {
       >
         <GithubOutlined />
       </IconButton> */}
+      <IconButton component={Link} disableRipple color="secondary" title="Sync" sx={{ color: 'text.primary', bgcolor: 'grey.100' }}>
+        <RedoOutlined />
+      </IconButton>
 
       <Notification />
       {!matchesXs && <Profile />}

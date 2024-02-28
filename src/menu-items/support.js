@@ -1,11 +1,11 @@
 // assets
-import { ChromeOutlined, QuestionOutlined } from '@ant-design/icons';
+// import { ChromeOutlined, QuestionOutlined } from '@ant-design/icons';
 
 // icons
-const icons = {
-  ChromeOutlined,
-  QuestionOutlined
-};
+// const icons = {
+//   ChromeOutlined,
+//   QuestionOutlined
+// };
 
 // ==============================|| MENU ITEMS - SAMPLE PAGE & DOCUMENTATION ||============================== //
 
@@ -18,8 +18,8 @@ const support = {
       id: 'sample-page',
       title: 'Pages',
       type: 'item',
-      url: '/sample-page',
-      icon: icons.ChromeOutlined
+      url: '/sample-page'
+      // icon: icons.ChromeOutlined
     }
     // {
     //   id: 'documentation',
