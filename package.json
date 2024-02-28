@@ -2,7 +2,7 @@
   "name": "mantis-free-react-admin-template",
   "version": "1.2.0",
   "private": false,
-  "homepage": "https://sohalmani.github.io/ssle",
+  "homepage": "https://sohalmani.github.io/ssle/",
   "dependencies": {
     "@ant-design/colors": "^7.0.2",
     "@ant-design/icons": "^5.2.6",
@@ -48,7 +48,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "npm run build && gh-pages -d build"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
