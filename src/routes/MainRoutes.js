@@ -67,6 +67,30 @@ const MainRoutes = {
     {
       path: 'rail/call-for-service',
       element: <SamplePage />
+    },
+    {
+      path: 'bus/crime',
+      element: <SamplePage />
+    },
+    {
+      path: 'bus/arrest',
+      element: <SamplePage />
+    },
+    {
+      path: 'bus/call-for-service',
+      element: <SamplePage />
+    },
+    {
+      path: 'system-wide/crime',
+      element: <SamplePage />
+    },
+    {
+      path: 'system-wide/arrest',
+      element: <SamplePage />
+    },
+    {
+      path: 'system-wide/call-for-service',
+      element: <SamplePage />
     }
   ]
 };

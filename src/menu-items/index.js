@@ -4,6 +4,8 @@ import dashboard from './dashboard';
 // import utilities from './utilities';
 import support from './support';
 import rail from './rail';
+import bus from './bus';
+import systemWide from './system-wide';
 
 // ==============================|| MENU ITEMS ||============================== //
 
@@ -13,7 +15,9 @@ const menuItems = {
     // pages,
     // utilities,
     support,
-    rail
+    rail,
+    bus,
+    systemWide
   ]
 };
 

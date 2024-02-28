@@ -36,7 +36,7 @@ const NavItem = ({ item, level }) => {
   const Icon = item.icon;
   const itemIcon = item.icon ? <Icon style={{ fontSize: drawerOpen ? '1rem' : '1.25rem' }} /> : false;
 
-  const isSelected = openItem.findIndex((id) => id === item.id) > -1;
+  const isSelected = openItem.findIndex((id) => id === item.id) > -1 && item.url === pathname;
   // active menu item on page load
   useEffect(() => {
     if (pathname.includes(item.url)) {
