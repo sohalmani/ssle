@@ -1,4 +1,5 @@
-import * as React from 'react';
+import { Link } from 'react-router-dom';
+
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 import Table from '@mui/material/Table';
@@ -35,9 +36,11 @@ export default function BasicTable() {
             <TableCell>DEC 2023</TableCell>
             <TableCell align="right">
               <Stack spacing={1} direction="row" justifyContent="flex-end">
-                <Button variant="outlined" color="warning">
-                  Edit
-                </Button>
+                <Link to="edit">
+                  <Button variant="outlined" color="warning">
+                    Edit
+                  </Button>
+                </Link>
               </Stack>
             </TableCell>
           </TableRow>
@@ -52,9 +55,11 @@ export default function BasicTable() {
             <TableCell>JUN 2023</TableCell>
             <TableCell align="right">
               <Stack spacing={1} direction="row" justifyContent="flex-end">
-                <Button variant="outlined" color="warning">
-                  Edit
-                </Button>
+                <Link to="edit">
+                  <Button variant="outlined" color="warning">
+                    Edit
+                  </Button>
+                </Link>
               </Stack>
             </TableCell>
           </TableRow>
