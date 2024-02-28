@@ -14,13 +14,13 @@ const support = {
   title: '',
   type: 'group',
   children: [
-    {
-      id: 'sample-page',
-      title: 'Pages',
-      type: 'item',
-      url: '/sample-page'
-      // icon: icons.ChromeOutlined
-    }
+    // {
+    //   id: 'sample-page',
+    //   title: 'Pages',
+    //   type: 'item',
+    //   url: '/sample-page'
+    //   // icon: icons.ChromeOutlined
+    // }
     // {
     //   id: 'documentation',
     //   title: 'Documentation',

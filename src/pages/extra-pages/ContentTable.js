@@ -15,48 +15,45 @@ export default function BasicTable() {
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
           <TableRow>
-            <TableCell>Section Heading</TableCell>
+            <TableCell sx={{ minWidth: 250 }}>Section Heading</TableCell>
             <TableCell>Comments</TableCell>
-            <TableCell align="right">Actions</TableCell>
+            <TableCell sx={{ minWidth: 100 }}>Month & Year</TableCell>
+            <TableCell align="right" sx={{ minWidth: 250 }}>
+              Actions
+            </TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
           <TableRow key={1} sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
             <TableCell component="th" scope="row">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae
-              consequuntur voluptatum laborum numquam
+              Serious Crime
             </TableCell>
             <TableCell>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae
               consequuntur voluptatum laborum numquam
             </TableCell>
+            <TableCell>DEC 2023</TableCell>
             <TableCell align="right">
               <Stack spacing={1} direction="row" justifyContent="flex-end">
                 <Button variant="outlined" color="warning">
                   Edit
-                </Button>
-                <Button variant="contained" color="error">
-                  Delete
                 </Button>
               </Stack>
             </TableCell>
           </TableRow>
           <TableRow key={1} sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
             <TableCell component="th" scope="row">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae
-              consequuntur voluptatum laborum numquam
+              General Crime
             </TableCell>
             <TableCell>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae
               consequuntur voluptatum laborum numquam
             </TableCell>
+            <TableCell>JUN 2023</TableCell>
             <TableCell align="right">
               <Stack spacing={1} direction="row" justifyContent="flex-end">
                 <Button variant="outlined" color="warning">
                   Edit
-                </Button>
-                <Button variant="contained" color="error">
-                  Delete
                 </Button>
               </Stack>
             </TableCell>

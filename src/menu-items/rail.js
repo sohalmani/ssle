@@ -15,6 +15,13 @@ const rail = {
   type: 'group',
   children: [
     {
+      id: 'call-for-service',
+      title: 'Call for Service',
+      type: 'item',
+      url: '/rail/call-for-service'
+      // icon: icons.ChromeOutlined
+    },
+    {
       id: 'crime',
       title: 'Crime',
       type: 'item',
@@ -26,13 +33,6 @@ const rail = {
       title: 'Arrest',
       type: 'item',
       url: '/rail/arrest'
-      // icon: icons.ChromeOutlined
-    },
-    {
-      id: 'call-for-service',
-      title: 'Call for Service',
-      type: 'item',
-      url: '/rail/call-for-service'
       // icon: icons.ChromeOutlined
     }
   ]

@@ -6,7 +6,7 @@ import {
   Button,
   // Checkbox,
   // Divider,
-  // FormControl,
+  FormControl,
   // FormControlLabel,
   // FormHelperText,
   Grid,
@@ -14,9 +14,9 @@ import {
   // IconButton,
   // InputAdornment,
   InputLabel,
-  // MenuItem,
+  MenuItem,
   OutlinedInput,
-  // Select,
+  Select,
   Stack
   // Typography
 } from '@mui/material';
@@ -24,6 +24,7 @@ import {
 // project import
 import MainCard from 'components/MainCard';
 import ContentTable from './ContentTable';
+import { useState } from 'react';
 
 // ==============================|| SAMPLE PAGE ||============================== //
 
@@ -33,6 +34,18 @@ const SamplePage = () => {
   // const handleRouteChange = (event) => {
   //   setRoute(event.target.value);
   // };
+
+  const [year, setYear] = useState(2024);
+
+  const handleYearChange = (event) => {
+    setYear(event.target.value);
+  };
+
+  const [month, setMonth] = useState('DEC');
+
+  const handleMonthChange = (event) => {
+    setMonth(event.target.value);
+  };
 
   return (
     <Grid container spacing={3}>
@@ -108,26 +121,58 @@ const SamplePage = () => {
         </MainCard>
       </Grid> */}
       <Grid item xs={12}>
+        <Stack spacing={1} align="right">
+          <Stack spacing={1} direction="row" justifyContent="flex-end">
+            <Button variant="outlined">Preview</Button>
+            <Button variant="contained">Publish</Button>
+          </Stack>
+        </Stack>
+      </Grid>
+      <Grid item xs={12}>
         <MainCard title="">
           <form>
             <Grid container spacing={3}>
               <Grid item xs={6}>
-                <Stack spacing={1}>
-                  <InputLabel htmlFor="date-start">Date range</InputLabel>
-                  <Stack spacing={1} direction="row">
-                    <OutlinedInput id="date-start" type="text" value="" name="date-start" placeholder="Date Start" fullWidth />
-                    <OutlinedInput id="date-end" type="text" value="" name="date-end" placeholder="Date End" fullWidth />
-                  </Stack>
+                <Stack spacing={1} direction="row">
+                  <FormControl sx={{ minWidth: 80 }}>
+                    <InputLabel htmlFor="year">Year</InputLabel>
+                    <Select id="year" value={year} onChange={handleYearChange} autoWidth placeholder="Year">
+                      <MenuItem value="">
+                        <em>None</em>
+                      </MenuItem>
+                      <MenuItem value={2024}>2024</MenuItem>
+                      <MenuItem value={2023}>2023</MenuItem>
+                      <MenuItem value={2022}>2022</MenuItem>
+                      <MenuItem value={2021}>2021</MenuItem>
+                      <MenuItem value={2020}>2020</MenuItem>
+                      <MenuItem value={2019}>2019</MenuItem>
+                    </Select>
+                  </FormControl>
+                  <FormControl sx={{ minWidth: 80 }}>
+                    <InputLabel htmlFor="month">Month</InputLabel>
+                    <Select id="month" value={month} onChange={handleMonthChange} autoWidth placeholder="Month">
+                      <MenuItem value="">
+                        <em>None</em>
+                      </MenuItem>
+                      <MenuItem value={'JAN'}>JAN</MenuItem>
+                      <MenuItem value={'FEB'}>FEB</MenuItem>
+                      <MenuItem value={'MAR'}>MAR</MenuItem>
+                      <MenuItem value={'APR'}>APR</MenuItem>
+                      <MenuItem value={'MAY'}>MAY</MenuItem>
+                      <MenuItem value={'JUN'}>JUN</MenuItem>
+                      <MenuItem value={'JUL'}>JUL</MenuItem>
+                      <MenuItem value={'AUG'}>AUG</MenuItem>
+                      <MenuItem value={'SEP'}>SEP</MenuItem>
+                      <MenuItem value={'OCT'}>OCT</MenuItem>
+                      <MenuItem value={'NOV'}>NOV</MenuItem>
+                      <MenuItem value={'DEC'}>DEC</MenuItem>
+                    </Select>
+                  </FormControl>
                 </Stack>
               </Grid>
               <Grid item xs={6}>
-                <Stack spacing={1}>
-                  <InputLabel htmlFor="search">Search</InputLabel>
-                  <OutlinedInput id="search" type="text" value="" name="search" placeholder="Search.." fullWidth />
-                </Stack>
-              </Grid>
-              <Grid item xs={12}>
                 <Stack spacing={1} direction="row" justifyContent="flex-end">
+                  <OutlinedInput id="search" type="text" value="" name="search" placeholder="Search.." fullWidth />
                   <Button variant="contained">Filter</Button>
                 </Stack>
               </Grid>

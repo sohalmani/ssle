@@ -6,7 +6,7 @@ import { RedoOutlined } from '@ant-design/icons';
 // project import
 import Search from './Search';
 import Profile from './Profile';
-import Notification from './Notification';
+// import Notification from './Notification';
 import MobileSection from './MobileSection';
 
 // ==============================|| HEADER - CONTENT ||============================== //
@@ -34,7 +34,7 @@ const HeaderContent = () => {
         <RedoOutlined />
       </IconButton>
 
-      <Notification />
+      {/* <Notification /> */}
       {!matchesXs && <Profile />}
       {matchesXs && <MobileSection />}
     </>
