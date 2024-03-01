@@ -28,7 +28,7 @@ import MainCard from 'components/MainCard';
 
 // ==============================|| SAMPLE PAGE ||============================== //
 
-const SamplePage = () => {
+const CrimePage = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
@@ -135,17 +135,17 @@ const SamplePage = () => {
             <TableBody>
               <TableRow key={1} sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
                 <TableCell component="th" scope="row">
-                  Call For Service
+                  Serious Crime
                 </TableCell>
                 <TableCell>Lorem ipsum dolor sit amet consectetur adipisicing elit.</TableCell>
-                <TableCell>DEC 2023</TableCell>
+                <TableCell>MAR 2023</TableCell>
                 <TableCell align="right">
                   <Stack spacing={1} direction="row" justifyContent="flex-end">
                     <Button
                       variant="outlined"
                       color="warning"
                       onClick={() =>
-                        handleEditClick('Call For Service', 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', 'DEC', '2023')
+                        handleEditClick('Serious Crime', 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', 'MAR', '2023')
                       }
                     >
                       Edit
@@ -155,7 +155,7 @@ const SamplePage = () => {
               </TableRow>
               <TableRow key={1} sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
                 <TableCell component="th" scope="row">
-                  Crime
+                  General Crime
                 </TableCell>
                 <TableCell>Lorem ipsum dolor sit amet consectetur adipisicing elit.</TableCell>
                 <TableCell>JUN 2023</TableCell>
@@ -164,7 +164,9 @@ const SamplePage = () => {
                     <Button
                       variant="outlined"
                       color="warning"
-                      onClick={() => handleEditClick('Crime', 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', 'JUN', '2023')}
+                      onClick={() =>
+                        handleEditClick('General Crime', 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', 'JUN', '2023')
+                      }
                     >
                       Edit
                     </Button>
@@ -173,7 +175,7 @@ const SamplePage = () => {
               </TableRow>
               <TableRow key={1} sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
                 <TableCell component="th" scope="row">
-                  Arrest
+                  Agency Wise Analysis
                 </TableCell>
                 <TableCell>Lorem ipsum dolor sit amet consectetur adipisicing elit.</TableCell>
                 <TableCell>DEC 2023</TableCell>
@@ -182,7 +184,9 @@ const SamplePage = () => {
                     <Button
                       variant="outlined"
                       color="warning"
-                      onClick={() => handleEditClick('Arrest', 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', 'DEC', '2023')}
+                      onClick={() =>
+                        handleEditClick('Agency Wise Analysis', 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', 'DEC', '2023')
+                      }
                     >
                       Edit
                     </Button>
@@ -197,4 +201,4 @@ const SamplePage = () => {
   );
 };
 
-export default SamplePage;
+export default CrimePage;

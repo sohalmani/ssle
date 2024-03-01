@@ -28,7 +28,7 @@ import MainCard from 'components/MainCard';
 
 // ==============================|| SAMPLE PAGE ||============================== //
 
-const SamplePage = () => {
+const ArrestPage = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
@@ -135,7 +135,43 @@ const SamplePage = () => {
             <TableBody>
               <TableRow key={1} sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
                 <TableCell component="th" scope="row">
-                  Call For Service
+                  Male
+                </TableCell>
+                <TableCell>Lorem ipsum dolor sit amet consectetur adipisicing elit.</TableCell>
+                <TableCell>MAR 2023</TableCell>
+                <TableCell align="right">
+                  <Stack spacing={1} direction="row" justifyContent="flex-end">
+                    <Button
+                      variant="outlined"
+                      color="warning"
+                      onClick={() => handleEditClick('Male', 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', 'MAR', '2023')}
+                    >
+                      Edit
+                    </Button>
+                  </Stack>
+                </TableCell>
+              </TableRow>
+              <TableRow key={1} sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
+                <TableCell component="th" scope="row">
+                  Female
+                </TableCell>
+                <TableCell>Lorem ipsum dolor sit amet consectetur adipisicing elit.</TableCell>
+                <TableCell>JUN 2023</TableCell>
+                <TableCell align="right">
+                  <Stack spacing={1} direction="row" justifyContent="flex-end">
+                    <Button
+                      variant="outlined"
+                      color="warning"
+                      onClick={() => handleEditClick('Female', 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', 'JUN', '2023')}
+                    >
+                      Edit
+                    </Button>
+                  </Stack>
+                </TableCell>
+              </TableRow>
+              <TableRow key={1} sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
+                <TableCell component="th" scope="row">
+                  Agency Wise Analysis
                 </TableCell>
                 <TableCell>Lorem ipsum dolor sit amet consectetur adipisicing elit.</TableCell>
                 <TableCell>DEC 2023</TableCell>
@@ -145,44 +181,8 @@ const SamplePage = () => {
                       variant="outlined"
                       color="warning"
                       onClick={() =>
-                        handleEditClick('Call For Service', 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', 'DEC', '2023')
+                        handleEditClick('Agency Wise Analysis', 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', 'DEC', '2023')
                       }
-                    >
-                      Edit
-                    </Button>
-                  </Stack>
-                </TableCell>
-              </TableRow>
-              <TableRow key={1} sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
-                <TableCell component="th" scope="row">
-                  Crime
-                </TableCell>
-                <TableCell>Lorem ipsum dolor sit amet consectetur adipisicing elit.</TableCell>
-                <TableCell>JUN 2023</TableCell>
-                <TableCell align="right">
-                  <Stack spacing={1} direction="row" justifyContent="flex-end">
-                    <Button
-                      variant="outlined"
-                      color="warning"
-                      onClick={() => handleEditClick('Crime', 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', 'JUN', '2023')}
-                    >
-                      Edit
-                    </Button>
-                  </Stack>
-                </TableCell>
-              </TableRow>
-              <TableRow key={1} sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
-                <TableCell component="th" scope="row">
-                  Arrest
-                </TableCell>
-                <TableCell>Lorem ipsum dolor sit amet consectetur adipisicing elit.</TableCell>
-                <TableCell>DEC 2023</TableCell>
-                <TableCell align="right">
-                  <Stack spacing={1} direction="row" justifyContent="flex-end">
-                    <Button
-                      variant="outlined"
-                      color="warning"
-                      onClick={() => handleEditClick('Arrest', 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', 'DEC', '2023')}
                     >
                       Edit
                     </Button>
@@ -197,4 +197,4 @@ const SamplePage = () => {
   );
 };
 
-export default SamplePage;
+export default ArrestPage;

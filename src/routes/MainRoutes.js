@@ -10,6 +10,9 @@ const DashboardDefault = Loadable(lazy(() => import('pages/dashboard')));
 
 // render - sample page
 const SamplePage = Loadable(lazy(() => import('pages/extra-pages/SamplePage')));
+const CallForServicePage = Loadable(lazy(() => import('pages/extra-pages/CallForServicePage')));
+const CrimePage = Loadable(lazy(() => import('pages/extra-pages/CrimePage')));
+const ArrestPage = Loadable(lazy(() => import('pages/extra-pages/ArrestPage')));
 const SampleLandingPage = Loadable(lazy(() => import('pages/extra-pages/SampleLandingPage')));
 const SampleEditPage = Loadable(lazy(() => import('pages/extra-pages/SampleEditPage')));
 
@@ -68,7 +71,7 @@ const MainRoutes = {
     },
     {
       path: 'rail/crime',
-      element: <SamplePage />
+      element: <CrimePage />
     },
     {
       path: 'rail/crime/edit',
@@ -76,7 +79,7 @@ const MainRoutes = {
     },
     {
       path: 'rail/arrest',
-      element: <SamplePage />
+      element: <ArrestPage />
     },
     {
       path: 'rail/arrest/edit',
@@ -84,7 +87,7 @@ const MainRoutes = {
     },
     {
       path: 'rail/call-for-service',
-      element: <SamplePage />
+      element: <CallForServicePage />
     },
     {
       path: 'rail/call-for-service/edit',
@@ -100,7 +103,7 @@ const MainRoutes = {
     },
     {
       path: 'bus/crime',
-      element: <SamplePage />
+      element: <CrimePage />
     },
     {
       path: 'bus/crime/edit',
@@ -108,7 +111,7 @@ const MainRoutes = {
     },
     {
       path: 'bus/arrest',
-      element: <SamplePage />
+      element: <ArrestPage />
     },
     {
       path: 'bus/arrest/edit',
@@ -116,7 +119,7 @@ const MainRoutes = {
     },
     {
       path: 'bus/call-for-service',
-      element: <SamplePage />
+      element: <CallForServicePage />
     },
     {
       path: 'bus/call-for-service/edit',
@@ -132,7 +135,7 @@ const MainRoutes = {
     },
     {
       path: 'system-wide/crime',
-      element: <SamplePage />
+      element: <CrimePage />
     },
     {
       path: 'system-wide/crime/edit',
@@ -140,7 +143,7 @@ const MainRoutes = {
     },
     {
       path: 'system-wide/arrest',
-      element: <SamplePage />
+      element: <ArrestPage />
     },
     {
       path: 'system-wide/arrest/edit',
@@ -148,7 +151,7 @@ const MainRoutes = {
     },
     {
       path: 'system-wide/call-for-service',
-      element: <SamplePage />
+      element: <CallForServicePage />
     },
     {
       path: 'system-wide/call-for-service/edit',

@@ -26,7 +26,7 @@ import ProfileTab from './ProfileTab';
 import SettingTab from './SettingTab';
 
 // assets
-import avatar1 from 'assets/images/users/avatar-1.png';
+// import avatar1 from 'assets/images/users/avatar-1.png';
 import {
   LogoutOutlined,
   // SettingOutlined,
@@ -101,8 +101,10 @@ const Profile = () => {
         onClick={handleToggle}
       >
         <Stack direction="row" spacing={2} alignItems="center" sx={{ p: 0.5 }}>
-          <Avatar alt="profile user" src={avatar1} sx={{ width: 32, height: 32 }} />
-          <Typography variant="subtitle1">John Doe</Typography>
+          <Avatar alt="profile user" sx={{ width: 32, height: 32 }}>
+            <UserOutlined />
+          </Avatar>
+          <Typography variant="subtitle1">Admin</Typography>
         </Stack>
       </ButtonBase>
       <Popper
@@ -143,11 +145,13 @@ const Profile = () => {
                       <Grid container justifyContent="space-between" alignItems="center">
                         <Grid item>
                           <Stack direction="row" spacing={1.25} alignItems="center">
-                            <Avatar alt="profile user" src={avatar1} sx={{ width: 32, height: 32 }} />
+                            <Avatar alt="profile user" sx={{ width: 32, height: 32 }}>
+                              <UserOutlined />
+                            </Avatar>
                             <Stack>
-                              <Typography variant="h6">John Doe</Typography>
+                              <Typography variant="h6">Admin</Typography>
                               <Typography variant="body2" color="textSecondary">
-                                UI/UX Designer
+                                System Administrator
                               </Typography>
                             </Stack>
                           </Stack>
