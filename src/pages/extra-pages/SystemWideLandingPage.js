@@ -63,7 +63,7 @@ const SamplePage = () => {
         <Stack spacing={1} align="right">
           <Stack spacing={1} direction="row" justifyContent="flex-end">
             <a
-              href="https://www.figma.com/proto/SIIquflUf9Uzq2uSWcc464/SSLE?type=design&node-id=216-15789&t=MBPMueBVzBhdcfXR-1&scaling=scale-down&page-id=114%3A2955"
+              href="https://www.figma.com/proto/SIIquflUf9Uzq2uSWcc464/SSLE?type=design&node-id=216-15954&t=MBPMueBVzBhdcfXR-1&scaling=scale-down&page-id=114%3A2955"
               target="_blank"
               rel="noreferrer"
             >

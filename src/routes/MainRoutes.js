@@ -14,6 +14,8 @@ const CallForServicePage = Loadable(lazy(() => import('pages/extra-pages/CallFor
 const CrimePage = Loadable(lazy(() => import('pages/extra-pages/CrimePage')));
 const ArrestPage = Loadable(lazy(() => import('pages/extra-pages/ArrestPage')));
 const SampleLandingPage = Loadable(lazy(() => import('pages/extra-pages/SampleLandingPage')));
+const BusLandingPage = Loadable(lazy(() => import('pages/extra-pages/BusLandingPage')));
+const SystemWideLandingPage = Loadable(lazy(() => import('pages/extra-pages/SystemWideLandingPage')));
 const SampleEditPage = Loadable(lazy(() => import('pages/extra-pages/SampleEditPage')));
 
 // render - utilities
@@ -95,7 +97,7 @@ const MainRoutes = {
     },
     {
       path: 'bus/',
-      element: <SampleLandingPage />
+      element: <BusLandingPage />
     },
     {
       path: 'bus/edit',
@@ -127,7 +129,7 @@ const MainRoutes = {
     },
     {
       path: 'system-wide/',
-      element: <SampleLandingPage />
+      element: <SystemWideLandingPage />
     },
     {
       path: 'system-wide/edit',
