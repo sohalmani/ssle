@@ -17,6 +17,10 @@ const BusLandingPage = Loadable(lazy(() => import('pages/ssle/landing/BusLanding
 const SystemWideLandingPage = Loadable(lazy(() => import('pages/ssle/landing/SystemWideLandingPage')));
 
 // render - ssle detail pages
+const RailCallForServicePage = Loadable(lazy(() => import('pages/ssle/detail/rail/CallForServicePage')));
+const RailCrimePage = Loadable(lazy(() => import('pages/ssle/detail/rail/CrimePage')));
+const RailArrestPage = Loadable(lazy(() => import('pages/ssle/detail/rail/ArrestPage')));
+
 const CallForServicePage = Loadable(lazy(() => import('pages/ssle/detail/CallForServicePage')));
 const CrimePage = Loadable(lazy(() => import('pages/ssle/detail/CrimePage')));
 const ArrestPage = Loadable(lazy(() => import('pages/ssle/detail/ArrestPage')));
@@ -79,7 +83,7 @@ const MainRoutes = {
     },
     {
       path: 'rail/crime',
-      element: <CrimePage />
+      element: <RailCrimePage />
     },
     {
       path: 'rail/crime/edit',
@@ -87,7 +91,7 @@ const MainRoutes = {
     },
     {
       path: 'rail/arrest',
-      element: <ArrestPage />
+      element: <RailArrestPage />
     },
     {
       path: 'rail/arrest/edit',
@@ -95,7 +99,7 @@ const MainRoutes = {
     },
     {
       path: 'rail/call-for-service',
-      element: <CallForServicePage />
+      element: <RailCallForServicePage />
     },
     {
       path: 'rail/call-for-service/edit',
