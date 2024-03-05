@@ -57,19 +57,29 @@ const SamplePage = () => {
     navigate('edit');
   };
 
+  const handlePublishClick = () => {
+    const proceed = window.confirm('Are you sure?');
+
+    if (proceed) {
+      window.alert('Published');
+    }
+  };
+
   return (
     <Grid container spacing={3}>
       <Grid item xs={12}>
         <Stack spacing={1} align="right">
           <Stack spacing={1} direction="row" justifyContent="flex-end">
             <a
-              href="https://www.figma.com/proto/SIIquflUf9Uzq2uSWcc464/SSLE?type=design&node-id=216-15789&t=MBPMueBVzBhdcfXR-1&scaling=scale-down&page-id=114%3A2955"
+              href="https://www.figma.com/proto/SIIquflUf9Uzq2uSWcc464/SSLE?type=design&node-id=216-15954&t=MBPMueBVzBhdcfXR-1&scaling=scale-down&page-id=114%3A2955"
               target="_blank"
               rel="noreferrer"
             >
               <Button variant="outlined">Preview</Button>
             </a>
-            <Button variant="contained">Publish</Button>
+            <Button variant="contained" onClick={handlePublishClick}>
+              Publish
+            </Button>
           </Stack>
         </Stack>
       </Grid>

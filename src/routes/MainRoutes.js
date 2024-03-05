@@ -10,13 +10,19 @@ const DashboardDefault = Loadable(lazy(() => import('pages/dashboard')));
 
 // render - sample page
 const SamplePage = Loadable(lazy(() => import('pages/extra-pages/SamplePage')));
-const CallForServicePage = Loadable(lazy(() => import('pages/extra-pages/CallForServicePage')));
-const CrimePage = Loadable(lazy(() => import('pages/extra-pages/CrimePage')));
-const ArrestPage = Loadable(lazy(() => import('pages/extra-pages/ArrestPage')));
-const SampleLandingPage = Loadable(lazy(() => import('pages/extra-pages/SampleLandingPage')));
-const BusLandingPage = Loadable(lazy(() => import('pages/extra-pages/BusLandingPage')));
-const SystemWideLandingPage = Loadable(lazy(() => import('pages/extra-pages/SystemWideLandingPage')));
-const SampleEditPage = Loadable(lazy(() => import('pages/extra-pages/SampleEditPage')));
+
+// render - ssle landing pages
+const RailLandingPage = Loadable(lazy(() => import('pages/ssle/landing/RailLandingPage')));
+const BusLandingPage = Loadable(lazy(() => import('pages/ssle/landing/BusLandingPage')));
+const SystemWideLandingPage = Loadable(lazy(() => import('pages/ssle/landing/SystemWideLandingPage')));
+
+// render - ssle detail pages
+const CallForServicePage = Loadable(lazy(() => import('pages/ssle/detail/CallForServicePage')));
+const CrimePage = Loadable(lazy(() => import('pages/ssle/detail/CrimePage')));
+const ArrestPage = Loadable(lazy(() => import('pages/ssle/detail/ArrestPage')));
+
+// render - ssle edit page
+const EditPage = Loadable(lazy(() => import('pages/ssle/EditPage')));
 
 // render - utilities
 const Typography = Loadable(lazy(() => import('pages/components-overview/Typography')));
@@ -65,11 +71,11 @@ const MainRoutes = {
     },
     {
       path: 'rail/',
-      element: <SampleLandingPage />
+      element: <RailLandingPage />
     },
     {
       path: 'rail/edit',
-      element: <SampleEditPage />
+      element: <EditPage />
     },
     {
       path: 'rail/crime',
@@ -77,7 +83,7 @@ const MainRoutes = {
     },
     {
       path: 'rail/crime/edit',
-      element: <SampleEditPage />
+      element: <EditPage />
     },
     {
       path: 'rail/arrest',
@@ -85,7 +91,7 @@ const MainRoutes = {
     },
     {
       path: 'rail/arrest/edit',
-      element: <SampleEditPage />
+      element: <EditPage />
     },
     {
       path: 'rail/call-for-service',
@@ -93,7 +99,7 @@ const MainRoutes = {
     },
     {
       path: 'rail/call-for-service/edit',
-      element: <SampleEditPage />
+      element: <EditPage />
     },
     {
       path: 'bus/',
@@ -101,7 +107,7 @@ const MainRoutes = {
     },
     {
       path: 'bus/edit',
-      element: <SampleEditPage />
+      element: <EditPage />
     },
     {
       path: 'bus/crime',
@@ -109,7 +115,7 @@ const MainRoutes = {
     },
     {
       path: 'bus/crime/edit',
-      element: <SampleEditPage />
+      element: <EditPage />
     },
     {
       path: 'bus/arrest',
@@ -117,7 +123,7 @@ const MainRoutes = {
     },
     {
       path: 'bus/arrest/edit',
-      element: <SampleEditPage />
+      element: <EditPage />
     },
     {
       path: 'bus/call-for-service',
@@ -125,7 +131,7 @@ const MainRoutes = {
     },
     {
       path: 'bus/call-for-service/edit',
-      element: <SampleEditPage />
+      element: <EditPage />
     },
     {
       path: 'system-wide/',
@@ -133,7 +139,7 @@ const MainRoutes = {
     },
     {
       path: 'system-wide/edit',
-      element: <SampleEditPage />
+      element: <EditPage />
     },
     {
       path: 'system-wide/crime',
@@ -141,7 +147,7 @@ const MainRoutes = {
     },
     {
       path: 'system-wide/crime/edit',
-      element: <SampleEditPage />
+      element: <EditPage />
     },
     {
       path: 'system-wide/arrest',
@@ -149,7 +155,7 @@ const MainRoutes = {
     },
     {
       path: 'system-wide/arrest/edit',
-      element: <SampleEditPage />
+      element: <EditPage />
     },
     {
       path: 'system-wide/call-for-service',
@@ -157,7 +163,7 @@ const MainRoutes = {
     },
     {
       path: 'system-wide/call-for-service/edit',
-      element: <SampleEditPage />
+      element: <EditPage />
     }
   ]
 };
